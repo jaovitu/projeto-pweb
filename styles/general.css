@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lavender;
+}
+
+
+body, input {
+    font-family: Roboto, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+#header {
+    background-color: dodgerblue;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header a {
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header i {
+    margin-left: 5px;
+}
+
+#for-you-button {
+    align-items: center;
+    background: none;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    position: absolute;
+    right: 50px;
+}
+
+#for-you-button:hover {
+    opacity: 70%;
+}
+
+#for-you-button:active {
+    opacity: 100%;
+}
+
+
+#for-you-button #for-you-text {
+    font-weight: bolder;
+    margin-left: 5px;
+    padding-right: 8px;
+}
+
+#content {
+    margin: 100px auto 0 auto;
+    width: 720px;
+
+}
+
+#create-post {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px 0px lightgray;
+    padding: 20px;
+    width: 100%;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+}
+
+.user-img {
+    margin-right: 5px;
+}
+
+.user-img .img {
+    background-color: grey;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info .user-name {
+    color: dodgerblue;
+    font-weight: bolder;
+}
+
+#create-post #create-post-content {
+    margin-top: 15px;
+    width: 100%;
+}
+
+#create-post #create-post-content textarea {
+    background-color: mintcream;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    height: 100px;
+    outline: none;
+    padding-left: 18px;
+    padding-top: 14px;
+    resize: initial;
+    width: 100%;
+}
+
+#create-post #create-post-content textarea::placeholder {
+    color: lightslategray;
+    width: max-content;
+}
+
+#create-post #post-footer {
+    margin-top: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#create-post #media-icons {
+    display: flex;
+}
+
+
+#create-post .media-icons i {
+    color: dodgerblue;
+    margin-right: 10px;
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+}
+
+
+#create-post #post-footer button {
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    height: 30px;
+    outline: none;
+    width: 100px;
+}
+
+#posts {
+    margin-top: 100px;
+}
+
+#posts .post {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px 0px lightgray;
+    margin-bottom: 50px;
+    padding: 15px;
+}
+
+#posts .user-img .img {
+    background-color: lightskyblue;
+}
+
+#posts .time {
+    color: lightgray;
+    font-size: 0.8em;
+}
+
+#posts .post-content {
+    border-bottom: 1px solid lightgray;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+    margin-top: 15px;
+    padding-bottom: 10px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#posts .post-content img, #posts .post-content iframe{
+    border-radius: 10px;
+    margin: 15px auto;
+}
+
+#posts .statistics {
+    margin-top: 15px;
+
+    display: flex;
+    align-items: center;
+}
+
+#posts .statistics i {
+    margin-right: 5px;
+}
+
+
+#posts .interactions {
+    border-width: 100%;
+    margin-top: 10px;
+    width: 350px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#posts .interactions button {
+    background: none;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#posts .interactions i {
+    margin-right: 5px;
+}
+
+
+#posts .interactions .like {
+    color: mediumvioletred;
+    margin-right: 15px;
+}
+
+#posts .interactions .comment {
+    color: yellow;
+    margin-right: 15px;
+}
+
+#posts .interactions .share {
+    color: cornflowerblue;
+}
+
+#footer-page {
+    align-items: center;
+    background-color: dodgerblue;
+    color: #ffffff;
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    margin-top: 80px;
+    width: 100%;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/general.css">
+    <link rel="stylesheet" href="./styles/modal-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+    <script src="./javascript/for-you.js" defer></script>
+    <script src="./javascript/modal.js" defer></script>
+    <title>Pixel - For you</title>
+</head>
+<body>
+
+    <header id="header">
+        <a href="index.html">
+            <h2>Pixel</h2>
+            <i class="material-icons">question_answer</i>
+        </a>
+
+        <button id="for-you-button">
+            <i class="material-icons">auto_awesome</i>
+            <span id="for-you-text">For you</span>
+        </button>
+    </header>
+
+    <main id="content">
+
+        <section id="posts">
+            <article class="post">
+                <header class="post-header">
+                    <div class="user-img">
+                        <div class="img"></div>
+                    </div>
+                    <div class="user-info">
+                        <span class="user-name">User Name</span>
+                        <span class="time">28s</span>
+                    </div>
+                </header>
+
+                <div class="post-content">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptate totam quod. Est recusandae repellat iste provident fuga eaque rerum? Nesciunt voluptatibus libero iusto perferendis molestiae. Minima corporis nulla neque!
+                    </p>
+
+                    <iframe width="640" height="426" frameborder="0"></iframe>
+                </div>
+
+                <footer class="interactions">
+                    <button class="like">
+                        <i class="material-icons">favorite</i>
+                        <span>Curtir</span>
+                    </button>
+
+                    <button class="comment">
+                        <i class="material-icons">comment</i>
+                        <span>Comentar</span>
+                    </button>
+
+                    <button class="share">
+                        <i class="material-icons">share</i>
+                        <span>Compartilhar</span>
+                    </button>
+                </footer>
+            </article>
+
+            <article class="post">
+                <header class="post-header">
+                    <div class="user-img">
+                        <div class="img"></div>
+                    </div>
+                    <div class="user-info">
+                        <span class="user-name">User Name</span>
+                        <span class="time">1h</span>
+                    </div>
+                </header>
+
+                <div class="post-content">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptate totam quod. Est recusandae repellat iste provident fuga eaque rerum? Nesciunt voluptatibus libero iusto perferendis molestiae. Minima corporis nulla neque!
+                    </p>
+
+                    <iframe width="640" height="426" frameborder="0"></iframe>
+                </div>
+
+                <footer class="interactions">
+                    <button class="like">
+                        <i class="material-icons">favorite</i>
+                        <span>Curtir</span>
+                    </button>
+
+                    <button class="comment">
+                        <i class="material-icons">comment</i>
+                        <span>Comentar</span>
+                    </button>
+
+                    <button class="share">
+                        <i class="material-icons">share</i>
+                        <span>Compartilhar</span>
+                    </button>
+                </footer>
+            </article>
+
+            <article class="post">
+                <header class="post-header">
+                    <div class="user-img">
+                        <div class="img"></div>
+                    </div>
+                    <div class="user-info">
+                        <span class="user-name">User Name</span>
+                        <span class="time">10m</span>
+                    </div>
+                </header>
+
+                <div class="post-content">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptate totam quod. Est recusandae repellat iste provident fuga eaque rerum? Nesciunt voluptatibus libero iusto perferendis molestiae. Minima corporis nulla neque!
+                    </p>
+
+                   <iframe width="640" height="426" frameborder="0"></iframe>
+                </div>
+
+                <footer class="interactions">
+                    <button class="like">
+                        <i class="material-icons">favorite</i>
+                        <span>Curtir</span>
+                    </button>
+
+                    <button class="comment">
+                        <i class="material-icons">comment</i>
+                        <span>Comentar</span>
+                    </button>
+
+                    <button class="share">
+                        <i class="material-icons">share</i>
+                        <span>Compartilhar</span>
+                    </button>
+                </footer>
+            </article>
+        </section>
+    </main>
+
+    <footer id="footer-page">
+        <span>&copy;</span>
+        <span>Todos os direitos reservados</span>
+    </footer>
+
+    <div id="for-you-modal" class="modal-container">
+        <div class="modal">
+            <h2>Qual desses temas mais te interessa?</h2>
+            <ul>
+                <li><a id="futebol" class="option" href="for-you.html">Futebol</a></li>
+                <li><a id="musica" class="option" href="for-you.html">Música</a></li>
+                <li><a id="games" class="option" href="for-you.html">Games</a></li>
+                <li><a id="programacao" class="option" href="for-you.html">Programação</a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
