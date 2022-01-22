@@ -78,3 +78,51 @@
     padding: 20px;
     width: 100%;
 }
+
+.modal .contact_form {
+    margin-top: 40px;
+}
+
+.modal .contact_form div:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.modal .contact_form input {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+}
+
+.modal .contact_form .email_box input {
+   width: 100%;
+}
+
+.modal .contact_form textarea {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    height: 100px;
+    outline: none;
+    padding: 10px;
+    resize: none;
+    width: 100%;
+}
+
+.modal .contact_form input:focus, .modal .contact_form textarea:focus {
+    border-color: rgb(86, 170, 255);
+}
+
+.modal .contact_form button {
+    background-color: rgb(86, 170, 255);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+.modal .contact_form button:hover {
+    background-color: rgb(52, 145, 238);
+}

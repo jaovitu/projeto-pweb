@@ -11,7 +11,7 @@ const baseUrl = "https://www.youtube.com/embed/";
 
 const videos = {
     futebol: ["8FO6RkE3ps0", "hQbtlqCLCSU", "0Ipcs_J40_8"],
-    musica: ["QDX-1GuF2Gs", "KU9nvedIGzc", "QuWXG1ZvdEM"],
+    musica: ["v2_cBu7fulI", "KU9nvedIGzc", "QuWXG1ZvdEM"],
     games: ["ciNnK8buF74", "p4CoV2qL71M", "zzP5XV5Ydb0"],
     programacao: ["S9uPNppGsGo", "x4FdZd2-_uU", "y4ltLH9iK8E"]
 }

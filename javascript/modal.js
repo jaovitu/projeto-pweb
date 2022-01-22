@@ -1,22 +1,43 @@
 function modalControls() {
-    const modal = document.getElementById("for-you-modal");
+
     const forYouButton = document.getElementById("for-you-button");
+    const contactButton = document.getElementById("contact-button");
 
-    const openModal = () => modal.classList.add("show");
-    const closeModal = () => modal.classList.remove("show");
-    const saveUserOption = option => localStorage.userOption = option;
+    const controls = {
+        openModal: function(modalID) {
+            const modal = document.getElementById(modalID);
+            modal.classList.add("show");
+        },
 
-    forYouButton.addEventListener("click", event => openModal());
+        closeModal: function(modalID) {
+            const modal = document.getElementById(modalID);
 
-    modal.addEventListener("click", event => {
-        if(event.target.id === "for-you-modal") {
-            closeModal();
+            if(modal.classList.contains("modal-container") && modal.classList.contains("show")) {
+                modal.classList.remove("show");
+            }
+        },
+
+        saveUserOption: function(option) {
+            localStorage.userOption = option;
+        }
+    }
+
+    forYouButton.addEventListener("click", () => controls.openModal("for-you-modal"));
+    contactButton.addEventListener("click", () => controls.openModal("contact-modal"));
+    
+
+    document.addEventListener("click", event => {
+        const element = event.target;
+
+        if(element.classList.contains("option")) {
+            controls.saveUserOption(element.id);
         }
 
-        if(event.target.classList.contains("option")) {
-            saveUserOption(event.target.id);
+        if(element.classList.contains("modal-container")) {
+            controls.closeModal(element.id);
         }
-    });
+    } );
+    
 }
 
 modalControls();

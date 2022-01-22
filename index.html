@@ -198,9 +198,69 @@
         </section>
     </main>
 
-    <footer id="footer-page">
-        <span>&copy;</span>
-        <span>Todos os direitos reservados</span>
+    <footer id="footer">
+        <section class="footer__section top">
+            <div class="footer__logo">
+                <a href="#">
+                    <h2>Pixel</h2>
+                    <i class="material-icons">question_answer</i>
+                </a>
+            </div>
+
+            <div class="footer__links">
+                <dl class="footer__links--lista">
+                    <dt>Empresa</dt>
+    
+                    <dd><a>Comunidade</a></dd>
+                    <dd><a id="contact-button">Contato</a></dd>
+                    <dd><a>Sobre</a></dd>
+                </dl>
+
+                <dl class="footer__links--lista">
+                    <dt>Links úteis</dt>
+    
+                    <dd><a>Aplicativo móvel</a></dd>
+                    <dd><a>Desenvolvedores</a></dd>
+                    <dd><a>Publicidade</a></dd>
+                    <dd><a>Suporte</a></dd>
+                    <dd><a>Trabalhe conosco</a></dd>
+                </dl>
+            </div>
+
+            <nav class="footer__social_links">
+                <ul>
+                    <li><a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram_icon.svg" alt="Instagram icon"></a></li>
+                    <li><a href="https://twitter.com/" target="_blank"><img src="./img/twitter_icon.svg" alt="Twitter icon"></a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook_icon.svg" alt="Facebook icon"></a></li>
+                </ul>
+            </nav>
+            
+        </section>
+
+        <section class="footer__section bottom">
+            <div class="footer__country">
+                <span class="material-icons">public</span>
+                <span>Brasil</span>
+            </div>
+
+            <div class="footer__bottom_links">
+                <div>
+                    <ul>
+                        <li><a>Legal</a></li>
+                        <li><a>Centro de privacidade</a></li>
+                        <li><a>Políticas de privacidade</a></li>
+                        <li><a>Cookies</a></li>
+                        <li><a>Sobre anúncios</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <span>&copy 2022 Pixel Inc.</span>
+                </div>
+            </div>
+
+        </section>
+
     </footer>
 
 
@@ -213,6 +273,26 @@
                 <li><a id="games" class="option" href="for-you.html">Games</a></li>
                 <li><a id="programacao" class="option" href="for-you.html">Programação</a></li>
             </ul>
+        </div>
+    </div>
+
+    <div id="contact-modal" class="modal-container">
+        <div class="modal">
+            <h2>Formulário de contato</h2>
+            <form method="POST" action="" class="contact_form">
+                <div class="name_box">
+                    <input type="text" name="firstName" id="firstName" placeholder="Nome" autocomplete="none" />
+                    <input type="text" name="lastName" id="lastName" placeholder="Sobrenome" autocomplete="none" />
+                </div>
+
+                <div class="email_box">
+                    <input type="email" name="email" id="email" autocomplete="none" placeholder="Email" />
+                </div>
+
+                <textarea name="message" id="message" placeholder="Digite sua mensagem..." ></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
         </div>
     </div>
     
